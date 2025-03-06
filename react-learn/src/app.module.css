@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+html{
+    
+    background-color: #f8f9ff;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ecedf6;
+    width: 80%;
+    text-align: center;
+    display: block; /* Remplacer flex par block pour empiler les tâches verticalement */
+    align-items: center;
+    justify-content: center;
+    gap: 0 10px;
+    padding: 10px;
+}
+.task {
+    background-color: white;
+    height: 10vh;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+.task .right button{
+    background-color: #ebebeb;
+    border:none;
+    border-radius: 5px;
+    height: 75%;
+}
+input[type="checkbox"] {
+    border-radius: 20px;
+    border: none;
+}
+
+
+.violet{
+    background-color: #ecedf6;
+}
+.button {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; /* Assure que les boutons prennent toute la largeur du conteneur */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.button-action{
+    align-self: flex-start;
+    background-color: #efefef;
+}
+.button-list{
+    align-self: flex-end;
+    background-color: #cccedf;
+}
+.button-ajout{
+    height: 40px;
+    font-size: .80rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: #626af2;
+}
+.button-filter{
+    height: 40px;
+    font-size: .80rem;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #c7cddd;
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+.completed {
+    background-color: #d4edda;
+    text-decoration: line-through;
+}
